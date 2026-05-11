@@ -1,0 +1,18 @@
+useCaseDiagram
+    actor "Recruiter" as R
+    actor "Tech Lead" as TL
+    
+    package "Portfolio Website" {
+        usecase "View About Me & Bilingual Skills" as UC1
+        usecase "Download Professional CV" as UC2
+        usecase "Browse Project Gallery" as UC3
+        usecase "Navigate to GitHub Code" as UC4
+        usecase "Find Contact Information" as UC5
+    }
+
+    R --> UC1
+    R --> UC2
+    R --> UC5
+    TL --> UC3
+    TL --> UC4
+    TL --> UC1
